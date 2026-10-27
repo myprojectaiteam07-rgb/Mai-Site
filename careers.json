@@ -1,0 +1,128 @@
+[
+    {
+        "job_name": "HR & Admin Manager",
+        "job_description": "We are seeking an experienced, growth-focused HR & Admin Manager to lead our Human Resources and Administration functions. This pivotal role requires a strong leader, a system builder, and an organisational expert who balances empathy with authority.",
+        "job_detailview_url": "hr-admin-manager.html"
+    },    
+    {
+        "job_name": "Growth Manager",
+        "job_description": "We are seeking a Growth Manager to join our high-performing team and take full ownership of the customer journey — from the first enquiry to delivery and post-sale engagement. This is a target-driven role ideal for someone who excels in fast-paced environments, communicates confidently with UK-based clients, and consistently delivers exceptional customer experiences.",
+        "job_detailview_url": "growth-manager.html"
+    },
+    {
+        "job_name": "ENGLISH LANGUAGE EXPERTS",
+        "job_description": "Looking for a skilled English language trainer or expert, must be skilled with proofreading or editing while improving team's communication skills. A strong command of English and teaching experience is preferred.",
+        "job_detailview_url": "english-languge-expert.html"
+    },
+    {
+        "job_name": "PRODUCT MANAGER",
+        "job_description": "We are seeking the lead product development manager who coordinates with teams, defines roadmaps, and ensures delivery aligns with company goals. Strong organizational and analytical skills are a must.",
+        "job_detailview_url": "product-manager.html"
+    },
+    {
+        "job_name": "RECEPTIONIST",
+        "job_description": "We are looking for a receptionist who must be attentive to the visitors, manage calls, and ensure smooth front-office operations. Excellent communication and organizational skills are essential.",
+        "job_detailview_url": "receptionist.html"
+    },
+    {
+        "job_name": "IT & ITES PROFESSIONALS",
+        "job_description": "The respective candidate should support technology-driven processes through software development, IT support, and data processing. Expertise in relevant IT tools and solutions is required.",
+        "job_detailview_url": "it-&-ites.html"
+    },
+    {
+        "job_name": "VOLUNTEERS _ PSYCHIATRISTS",
+        "job_description": "In need of a Psychiatrists who is open for mental health support and counseling on a voluntary basis, focusing on improving psychological well-being. Relevant qualifications and empathy are key traits.",
+        "job_detailview_url": "psychiatrists.html"
+    },
+    {
+        "job_name": "FAMILY / CHILD COUNSELLOR",
+        "job_description": "Help families and children navigate challenges, improve relationships, and build a supportive environment. Experience in counseling and certifications in psychology are desirable.",
+        "job_detailview_url": "family-child-counsellor.html"
+    },
+    {
+        "job_name": "TRAINERS & TEACHERS",
+        "job_description": "Design and deliver training programs or classroom instruction tailored to learners’ needs. Strong subject knowledge and teaching skills are essential.",
+        "job_detailview_url": "trainer-teacher.html"
+    },
+    {
+        "job_name": "DEVOPS ENGINEER",
+        "job_description": "We are looking for a DevOps Engineer to join our dynamic team. You will work with the Business Analyst and bridge the gap between requirements and technical implementation, taking an active role on both sides and defining how the application looks as well as how it works.",
+        "job_detailview_url": "devops-engineer.html"
+    },
+    {
+        "job_name": "BUSINESS DEVELOPMENT MANAGER",
+        "job_description": "An exciting and integral opportunity has arisen for a motivated BUSINESS DEVELOPMENT MANAGER to join our fast paced,high growth business at a time of huge investment and development.",
+        "location": "Chennai",
+        "job_detailview_url": "business-development-manager.html"
+    },
+    {
+        "job_name": "PROJECT MANAGER",
+        "job_description": "We are looking for a Technical Project Manager to join our dynamic team. In this role, you will collaborate with cross-functional teams, stakeholders, and clients to oversee project execution from inception to completion. You’ll bridge the gap between business objectives and technical implementation, ensuring seamless communication, timely delivery, and high-quality results. Your leadership and organizational skills will play a key role in driving the success of our projects while fostering a positive and collaborative team environment.",
+        "job_detailview_url": "project-manager.html"
+    },
+    {
+        "job_name": "ACCOUNTS EXECUTIVE",
+        "job_description": "The ideal candidate will be responsible for developing financial strategies for the organisation, and providing regular financial reporting. They will also play a major role as procurement manager by communicating with our partners for product procurement. By reporting directly to the Managing Director, based within our UK headquarters, they will play a major role in delivering the future growth that we fully expect to realise.",
+        "job_detailview_url": "accounts-executive.html"
+    },
+    {
+        "job_name": "MEAN/MERN STACK DEVELOPER",
+        "job_description": "​We are looking for a MEAN Stack Developer to join our dynamic team. You will work with the Business Analyst and bridge the gap between requirements and technical implementation, taking an active role on both sides and defining how the application looks as well as how it works.",
+        "job_detailview_url": "mean-stack-developer.html"
+    },
+    {
+        "job_name": "ANDROID/IOS DEVELOPER",
+        "job_description": "​We are seeking a talented and creative Android/iOS React Native Developer to join our mobile app development team. As a React Native Developer, you will play a crucial role in designing, developing, and maintaining high-quality Android applications that provide exceptional user experiences.",
+        "job_detailview_url": "ios-developer.html"
+    },
+    {
+        "job_name": "CONTENT WRITER & DIGITAL MARKETER",
+        "job_description": "The ideal applicant must be aware of trendy writing styles and create content that connects with the targeted audience. The applicant shall be required to write, develop, edit, and publish content and copy for a variety of digital platforms, including website, blog, video, marketing email campaigns, advertising campaigns, social media posts, and more. Additionally, they will. The candidate will majorly.",
+        "job_detailview_url": "content-writer-digital-marketer.html"
+    },
+    {
+        "job_name": "GRAPHIC DESIGNER",
+        "job_description": "We see graphic design as visual storytelling that engages, informs, and inspires. Our ideal candidate will have expert knowledge of current design software and be skilled in every step of the design process, from concept to final deliverable. They will have a thorough understanding of branding and marketing, and be able to find the right style and layout for every project.",
+        "job_detailview_url": "graphic-designer.html"
+    },
+    {
+        "job_name": "FRONTEND DEVELOPER",
+        "job_description": "We are seeking a talented and creative Frontend Developer to join our Technical team. As a React JS Developer, you will play a crucial role in designing, developing, and maintaining high-quality web applications that provide exceptional user experiences.",
+        "job_detailview_url": "frontend-ui-developer.html"
+    },
+    {
+        "job_name": "JR UI DEVELOPER",
+        "job_description": "We are looking for an experienced Frontend Engineer with expertise in React to join our team. The ideal candidate will have strong technical skills in JavaScript, React, System Design and Modern CSS. In this role, you will be responsible for designing and developing web applications, working with cross-functional teams, and contributing to the overall success of the company.",
+        "job_detailview_url": "ui-developer.html"
+    },
+    {
+        "job_name": "PUBLIC RELATIONS & COMMUNICATIONS EXPERT",
+        "job_description": "It's a wonderful opportunity for someone who loves to empower the people through communication, corporate storytelling and is motivated by the chance to preserve and shape a company's reputation through strong storytelling and issues management within a global, purpose driven company.",
+        "job_detailview_url": "pr&communication-expert.html"
+    },
+    {
+        "job_name": "OFFICE ASSISTANT",
+        "job_description": "We are Looking for an Office Assistant with 2 years of Experience. The ideal candidate will be a hard-working professional able to undertake a variety of office support tasks and work diligently under pressure.",
+        "job_detailview_url": "office-assistant.html"
+    },
+    {
+        "job_name": "IT Administrator",
+        "job_description": "We are seeking an IT Administrator to join our dynamic team. You will collaborate with our IT team to oversee the technical infrastructure and ensure the smooth operation of our systems, playing an integral role in maintaining the reliability and functionality of our IT environment.",
+        "job_detailview_url": "itadmin.html"
+    },
+    {
+        "job_name": "HR & ADMIN EXECUTIVE",
+        "job_description": "The ideal applicant should have a humble yet outgoing demeanour and be confident in their capacity to assess a candidate's potential through deft questioning.",
+        "job_detailview_url": "hr-admin-executive.html"
+    },
+    {
+        "job_name": "TECHNICAL CO-FOUNDER",
+        "job_description": "We are looking for a Technical Co-founder for MAI CORPORATION.</b> As a Technical Cofounder, He/She will be responsible for helping to develop and grow the technology behind a company.",
+        "job_detailview_url": "technical-co-founder.html"
+    },
+    {
+        "job_name": "TECHNICAL INTERVIEW PANELISTS",
+        "job_description": "We at MAI CORPORATION, are looking for a dynamic talent pool of subject matter experts  who are IT trained professionals or Certified Tech Interview Experts, who can validate the skills of the candidates for different roles at MAI.",
+        "job_detailview_url": "technical-interview-panelists.html"
+    }
+]

@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <!-- Google tag (gtag.js) -->
+ 
+ <script>
+ window.dataLayer = window.dataLayer || [];
+ function gtag(){dataLayer.push(arguments);}
+ gtag('js', new Date());
+ 
+ gtag('config', 'G-CVNE7HQ1V9');
+ </script>
+ <meta property="og:title" content="MAI | Skilled Construction Tradesmen | Residential & Commercial Projects">
+  <meta property="og:description" content="MAI is a trusted platform that connects project owners with skilled builders and tradesmen. The secured escrow payment, verified trader's high-quality work and two way review system makes it stand out.">
+  <meta property="og:image" content="/assets/img/mailogo1.png">
+  <meta property="og:url" content="https://www.maicorporation.co.in/">
+
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>MAI</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.ico" rel="icon">
+  <!-- <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon"> -->
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+  <!-- MAI 3D Cinematic Scroll Experience CSS -->
+  <link href="assets/css/mai-3d.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Kelly
+  * Updated: Jul 27 2023 with Bootstrap v5.3.1
+  * Template URL: https://bootstrapmade.com/kelly-free-bootstrap-cv-resume-html-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+  <style>
+    /* Add CSS styles for container and moving images */
+    #background-container {
+       
+        height: 100%;
+        width: 100%;
+        background: url('https://maidemo.s3.eu-west-2.amazonaws.com/Rectangle+210.png'); /* Set your background image URL */
+        background-size: cover;
+        overflow: hidden; /* Ensure overflow is hidden */
+  
+    }
+    #background-first { 
+       height: auto;
+       width: 100%;
+       background: url('https://maidemo.s3.eu-west-2.amazonaws.com/image222.png'); /* Set your background image URL */
+       background-size: cover;
+       
+       /* z-index: -1; */
+   }
+
+    #moving-images {
+      display: flex;
+      flex-direction: row;
+     white-space: nowrap; /* Prevent line breaks */
+     animation: move-images 10s linear infinite; /* Animate the container's position */
+    }
+    
+   
+
+    @keyframes move-images {
+        0% {
+            transform: translateX(-100%); /* Start with no horizontal translation */
+        }
+        100% {
+            transform: translateX(0); /* Translate container to the left by 100% */
+        }
+    }
+    @keyframes slide-up {
+      0% { transform: translateY(100%); }
+      100% { transform: translateY(0); }
+    }
+
+    @keyframes slide-down {
+      0% { transform: translateY(100%); }
+      100% { transform: translateY(0); }
+    }
+</style>
+</head>
+
+<body>
+
+  <!-- =======================================================
+       MAI 3D Cinematic Scroll Experience
+       Stages: Dark Rain → Falling Raindrop → Water Splash → Sunrise → City Skyline → MAI Building
+       ======================================================== -->
+  <div id="mai-3d-scroll-track">
+    <div id="mai-3d-sticky">
+      <!-- 3D WebGL Canvas Viewport -->
+      <div id="mai-3d-viewport"></div>
+
+      <!-- Portal Flash Transition at Entrance Zoom -->
+      <div id="mai-portal-transition"></div>
+
+      <!-- Top HUD Header -->
+      <div class="mai-3d-header">
+        <div class="mai-3d-brand">
+          <img src="assets/img/mai_logo_white.png" alt="MAI">
+          <span>3D Cinematic Journey</span>
+        </div>
+        <button id="mai-skip-btn" class="mai-skip-btn" type="button">
+          <span>Explore Website</span>
+          <i class="bi bi-arrow-down-circle"></i>
+        </button>
+      </div>
+
+      <!-- Stage Dots Navigator (Right) -->
+      <ul class="mai-stage-dots">
+        <li class="mai-step-dot active" data-stage="0"><span class="tooltip-text">1. Dark Rain</span></li>
+        <li class="mai-step-dot" data-stage="1"><span class="tooltip-text">2. Falling Raindrop</span></li>
+        <li class="mai-step-dot" data-stage="2"><span class="tooltip-text">3. Water Splash</span></li>
+        <li class="mai-step-dot" data-stage="3"><span class="tooltip-text">4. Sunrise</span></li>
+        <li class="mai-step-dot" data-stage="4"><span class="tooltip-text">5. City Skyline</span></li>
+        <li class="mai-step-dot" data-stage="5"><span class="tooltip-text">6. MAI Building</span></li>
+      </ul>
+
+      <!-- Bottom Center Narrative Badge -->
+      <div class="mai-3d-narrative">
+        <span class="mai-stage-eyebrow">Scroll to navigate the narrative</span>
+        <h2 id="hud-stage-title" class="mai-stage-title">Dark Rain</h2>
+        <p id="hud-stage-desc" class="mai-stage-desc">A tempestuous storm gathers in the darkness</p>
+      </div>
+
+      <!-- Initial Scroll Hint -->
+      <div class="mai-scroll-prompt">
+        <div class="mai-scroll-mouse"></div>
+        <span>Scroll Down</span>
+      </div>
+
+      <!-- Progress Fill Bar -->
+      <div class="mai-hud-progress-track">
+        <div id="hud-progress-fill" class="mai-hud-progress-fill"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Replay Button (Appears when scrolled down to the website) -->
+  <button id="mai-replay-btn" class="mai-replay-btn" type="button" title="Replay 3D Cinematic Experience">
+    <i class="bi bi-arrow-clockwise"></i>
+    <span>Replay 3D Intro</span>
+  </button>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class=" fixed-top">
+    <div class="container d-flex justify-content-between">
+      <!-- <h1 class="logo me-auto me-lg-0"><a href="index.html">MAI</a></h1> -->
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <a href="index.html" class="logo hover-color"><img src="https://maidemo.s3.eu-west-2.amazonaws.com/MAI+New+Logo+White.png" alt="MAI-Logo" class="img-fluid"></a>
+
+      <nav id="navbar" class="navbar order-last order-lg-2">
+        <ul>
+          <li><a class="active hover-color" href="index.html">Home</a></li>
+          <li><a class="hover-color" href="about.html">About Us</a></li>
+          <li><a class="hover-color" href="careers.html">Careers</a></li>
+          <li><a class="hover-color" href="csr.html">CSR</a></li>
+          <li><a class="hover-color" href="testimonials.html">Testimonials</a></li>
+          <li><a class="hover-color" href="contact.html">Contact Us</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+        <div class="ms-4 logo">
+          <a href="index.html" class="logo hover-color sab-logo">
+            <img src="https://maidemo.s3.eu-west-2.amazonaws.com/Sab_white.png" alt="MAI-Logo"  ></a>
+  
+        </div>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+  <!--  -->
+  <main id="main">
+    <!-- About Us Section -->
+    <section id="about" class="about2 pt-0">
+        <div class="mt-6" style=" overflow: hidden;">
+            <div id="background-container">
+                <div id="moving-images">
+                    <!-- Nested div to contain the moving images -->
+                    <img src="https://maidemo.s3.eu-west-2.amazonaws.com/Rectangle+215.png" alt="Moving Image 1" class="moving-image">
+                    <img src="https://maidemo.s3.eu-west-2.amazonaws.com/Rectangle+216.png" alt="Moving Image 2" class="moving-image">
+                    <img src="https://maidemo.s3.eu-west-2.amazonaws.com/Rectangle+217.png" alt="Moving Image 3" class="moving-image">
+                    <img src="https://maidemo.s3.eu-west-2.amazonaws.com/Rectangle+218.png" alt="Moving Image 4" class="moving-image">
+                    <img src="https://maidemo.s3.eu-west-2.amazonaws.com/Rectangle+220.png" alt="Moving Image 5" class="moving-image">
+                    <img src="https://maidemo.s3.eu-west-2.amazonaws.com/Rectangle+221.png" alt="Moving Image 6" class="moving-image">
+                    <img src="https://maidemo.s3.eu-west-2.amazonaws.com/Rectangle+222.png" alt="Moving Image 2" class="moving-image">
+                    <!-- Add more images with the moving-image class for additional moving images -->
+                    <img src="https://maidemo.s3.eu-west-2.amazonaws.com/Rectangle+215.png" alt="Moving Image 1" class="moving-image">
+                    <img src="https://maidemo.s3.eu-west-2.amazonaws.com/Rectangle+216.png" alt="Moving Image 2" class="moving-image">
+                    <img src="https://maidemo.s3.eu-west-2.amazonaws.com/Rectangle+217.png" alt="Moving Image 3" class="moving-image">
+                    <img src="https://maidemo.s3.eu-west-2.amazonaws.com/Rectangle+218.png" alt="Moving Image 4" class="moving-image">
+                    <img src="https://maidemo.s3.eu-west-2.amazonaws.com/Rectangle+220.png" alt="Moving Image 5" class="moving-image">
+                    <img src="https://maidemo.s3.eu-west-2.amazonaws.com/Rectangle+221.png" alt="Moving Image 6" class="moving-image">
+                    <img src="https://maidemo.s3.eu-west-2.amazonaws.com/Rectangle+222.png" alt="Moving Image 2" class="moving-image">
+                </div>
+            </div>
+            <div id="background-first">
+              <div class="Home_main">
+                <div class="m-5 new_main col-lg-8">
+                  <h2 class="subtitle " data-aos="fade-right">What is MAI</h2>
+                  <div class="d-flex" data-aos="flip-down">
+                  <p class="fw-semibold olcss">MAI Corporation serves as a platform connecting homeowners with construction-related service providers, offering tailored solutions to address construction challenges</p>
+                  <p class="fw-semibold olcss">Our project also aligns with the Britain’s Prime Minister’s net zero emissions by helping property owners and traders list left-over construction materials on our platform, reducing carbon foot-prints and maximising value.</p>
+                </div>
+                </div>  
+                <div class="col-lg-4">
+                <img src="https://maidemo.s3.eu-west-2.amazonaws.com/image+332.png" alt="Moving Image 1" class="first_images">
+              </div>
+          
+              </div>
+              </div>
+              <div style="background-color: #003f6b; overflow: hidden;">
+                <div class="second_main">
+                  <div  data-aos="fade-right">
+                  <h3 class="second_main_title subtitlesb">“ Making Simple - Construction Projects ”  We Build Homes Everyday</h3>
+                </div>
+                <div data-aos="fade-left">
+                  <h3 class="second_main_title subtitlesb">MAI Experts at your service!</h3>
+                </div></div>
+
+    
+            </div>
+            <div class="container">
+              <div class="mt-4 mb-4 ">
+                <h2 class="subtitle" >A little bit about MAI</h2>
+                <p class="olcss">The one-stop solution to all your Home needs. At MAI, we believe in transforming spaces into havens. We are a skilled team comprising professional plumbers, bathroom fitters, carpenters, electricians, painters and decorators, loft builders, kitchen fitters and so on. If you already have the idea and sense but lack resources, inspiration and style MAI would be your best friend.</p>
+              </div>
+              <div>
+                <h2 class="subtitle">We Build Homes Everyday!</h2>
+                <h3 class="subtitlesb">Entrust your dreams to our qualified professionals:</h3>
+                <div class="d-flex row justify-content-between h-100" style="flex: 1;">
+                  <div class="col-lg-6 mt-2 text-center mb-2" data-aos="fade-right">
+                    <div class="home_card h-100">
+                     <h3 class="fw-bold subtitlesb">Bathroom Fitters</h3>
+                     <p class="olcss">We specialise in a diverse range of bathroom installation services throughout London, ensuring excellence in every aspect of our work. Our bathroom fitting services include repair, remodel and renovation.</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 mt-2 text-center mb-2" data-aos="fade-left">
+                    <div class="home_card h-100">
+                     <h3 class="fw-bold subtitlesb">Plumbers</h3>
+                     <p class="olcss">Our expertise in plumbing spans a comprehensive array of services, including the installation and repair of piping systems, radiators, boiler replacements, underfloor heating, showers, bathrooms, and the fitting of sinks, baths, toilets, and heated towel rails.</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 mt-2 text-center mb-2" data-aos="fade-right">
+                    <div class="home_card h-100">
+                     <h3 class="subtitlesb">Painters</h3>
+                     <p class="olcss">From paint and wallpaper stripping to expert plastering, wallpapering, and a spectrum of painting services including exterior, interior, decorative, and texture painting, we bring craftsmanship and creativity to every surface.</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 mt-2 text-center mb-2" data-aos="fade-left">
+                    <div class="home_card h-100">
+                     <h3 class="fw-bold subtitlesb">Carpenters and Decorators </h3>
+                     <p class="olcss">We specialize in carpentry services for diverse projects, crafting everything from made-to-measure cupboards, cabinets, and bookcases to fitted furniture and large-scale constructions, ensuring precision and excellence in every detail.</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 mt-2 text-center mb-2" data-aos="fade-right">
+                    <div class="home_card h-100">
+                     <h3 class="fw-bold subtitlesb">Kitchen Fitters</h3>
+                     <p class="olcss">Transform your space with exquisite designs, our team is at your service, specialising in crafting stunning kitchens. Don't hesitate, call us today! Our expert advice covers everything from colours and finishes to storage solutions, cabinetry construction, lighting, exhaust fans, and the selection of top-notch appliances including refrigerators and dishwashers."</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 mt-2 text-center mb-2" data-aos="fade-left">
+                    <div class="home_card h-100">
+                     <h3 class="fw-bold subtitlesb">Electricians</h3>
+                     <p class="olcss">Our team provides you with all the necessary services from lighting upgrades to electrical panel installations, we ensure your project is powered with precision and excellence.</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 mt-2 text-center mb-2" data-aos="fade-right">
+                    <div class="home_card h-100">
+                     <h3 class="fw-bold subtitlesb">Flooring</h3>
+                     <p class="olcss">Our comprehensive building services encompass a range of enhancements, from new floor installations and architrave fitting to plastering, wallpapering, painting, decorating, decking, fencing, and the installation of doors and windows.</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 mt-2 text-center mb-2" data-aos="fade-left">
+                    <div class="home_card h-100">
+                     <h3 class="fw-bold subtitlesb">Roofing Contractors</h3>
+                     <p class="olcss">From roof repairs to full replacements, we ensure the highest quality craftsmanship to protect and enhance the beauty of your living space.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <p class="olcss">The one-stop solution to all your Home needs. At MAI, we believe in transforming spaces into havens. We are a skilled team comprising professional plumbers, bathroom fitters, carpenters, electricians, painters and decorators, loft builders, kitchen fitters and so on. If you already have the idea and sense but lack resources, inspiration and style MAI would be your best friend.</p>
+            </div>
+            <div style="background-color:#DBE7F1; max-width: 100%; overflow: hidden;">
+              <div class="container">
+              <div style="gap: 15px;" class="sab-dev text-start" data-aos="flip-up">
+                  <div style="flex: 1; display: flex; flex-direction: column;" class="mt-4 mb-4">
+                      <h2 class="subtitle">Vision:</h2>
+                      <h3 class="subtitlesb">Creating the easiest, most efficient & reliable technology to serve the Construction Industry.</h3>
+                  </div>
+                  <div style="flex: 1; display: flex; flex-direction: column;" class="mt-4 mb-4">
+                      <h2 class="subtitle">Mission:</h2>
+                      <h3 class="subtitlesb">Growing together with Individual Traders & SMEs</h3>
+                  </div>
+              </div>
+              </div>
+            </div>
+             <div class="container">
+            <div class="mt-3">
+          <p class="olcss">The one-stop solution to all your Home needs. At MAI, we believe in transforming spaces into havens. We are a skilled team comprising professional plumbers, bathroom fitters, carpenters, electricians, painters and decorators, loft builders, kitchen fitters and so on. If you already have the idea and sense but lack resources, inspiration and style MAI would be your best friend.</p>
+          </div>
+          <div>
+            <h2 class="subtitle">Our Core Values:</h2>
+            <div  class="sab-dev mb-2 mt-3  text-start" >
+              <h3 class="subtitlesb ">Experienced Professionals</h3>
+              <h3 class="subtitlesb">On-Time Service Delivery</h3>
+            </div>
+          </div>
+          <h2 class="subtitle">Our Founder’s Background:</h2>
+          <div class="sab-dev h-100" style="flex: 1;">
+            <div class="col-lg-6 ps-0 pe-0" >
+                <div class="h-100" data-aos="flip-down">
+                    <!-- Check the image URL below -->
+                    <img src="https://maidemo.s3.eu-west-2.amazonaws.com/Group+2584.jpg" alt="Moving Image 1" style="width: 100%; height: auto; flex: 1;" class="image-rad" />
+                </div>
+            </div>
+            <div class="col-lg-6 ps-0 pe-0" data-aos="flip-up">
+                <div class="p-3  h-100 dev-rad" style="background-color:#DBE7F1;">
+                    <h3 class="subtitlesb">Our Founder’s</h3>
+                    <p class="olcss-3">GMS Kumar, the CEO of MAI embarked on his journey in the Construction industry at Work-Tops.com in the UK, where he put his 10+ years of experience in the Stone industry, and eight years in Recruitment and Education Consulting. He has set out to venture into the marketplace world with MAI (Myproject.ai), a platform catering to diverse construction needs for the people of the UK & Europe via .coms & mobile applications. His track record includes pioneering Microsoft Dynamic CRM in international student recruitment, implementing SAP at a prestigious Solicitor firm, launching a PHP-based Stone Industry marketplace and integrating cutting-edge Artificial Intelligence into Work-Tops.com.</p>
+                </div>
+            </div>
+        </div>
+        <h3 class="subtitlesb mt-3">Careers</h3>
+        <div class="d-flex row justify-content-evenly align-items-center h-100 butoon-home-dev" style="flex: 1;">
+          <div class="col-lg-4"><a href="careers.html"><p class="home-career-btn h-100 ">Human resources</p></a></div>
+          <div class="col-lg-4 "><a href="careers.html"><p class=" home-career-btn h-100">Finance</p></a></div>
+          <div class="col-lg-4 "><a href="careers.html"><p class=" home-career-btn h-100">Operation</p></a></div>
+          <div class="col-lg-4 "><a href="careers.html"><p class=" home-career-btn h-100">Admin</p></a></div>
+          <div class="col-lg-4 "><a href="careers.html"><p class=" home-career-btn h-100">Core Sales</p></a></div>
+          <div class="col-lg-4 "><a href="careers.html" ><p class=" home-career-btn h-100">Technical</p></a></div>
+          <div class="col-lg-4 "><a href="careers.html"><p class=" home-career-btn h-100">Design</p></a></div>
+          <div class="col-lg-4 "><a href="careers.html"><p class=" home-career-btn h-100">SEO</p></a></div>
+          <div class="col-lg-4 "><a href="careers.html"><p class=" home-career-btn h-100">Digital Marketing</p></a></div>
+        </div>
+        <div><p class="olcss">Join the Regional team powering the business of all your Home Needs…</p></div>
+        <div>
+          <h3 class="subtitlesb mt-3">Become A Member Of Our Enthusiastic & Committed Team</h3>
+          <p class="olcss">Experience a culture that values creativity, flexibility, and offers ample opportunities for career growth and personal development. With our people-centric, community-focused business model, we take pride in our high staff retention rate</p>
+        </div>
+        <div>
+          <h3 class="subtitlesb mt-3">DEI (Diversity, Equity and Inclusion) Commitment</h3>
+          <p class="olcss">MAI strives to create a space where everyone feels secure and empowered to bring their true selves to work is not just our promise, but our passion. In the end, cultivating an accessible and inclusive workplace is the key to unlocking the full potential of the thriving MAI family</p>
+        </div>
+        <div class="text-center p-4">
+          <h2 class="subtitlesb p-2">To click here</h2>
+          <div class="d-flex justify-content-center ">
+          <p><a href="careers.html" ><span class="home-career-btn widt-new" style=" display: flex; text-align: center; justify-content: center; align-items: center; font-size: 15px;">Opening for current position</span></a></p></div>
+          <!-- <p><a href="careers.html"><span class="home-career-btn ps-3 pe-3">Opening for current position</span></a></p> -->
+        </div>
+        <div>
+          <h3 class="subtitle mt-3">Current Openings:</h3>
+           <div class="row d-flex justify-content-center align-items-stretch services mb-4" >
+            <div class="col-lg-4 col-md-6 mt-4 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+              <div class="icon-box iconbox-red careerContainer" style="display:flex;flex-direction:column;justify-content:space-between">
+              <div>
+                <h2 class="p p1"><a href="frontend-ui-developer.html" target="_blank" rel="noopener noreferrer" aria-describedby="a11y-new-window-message">FRONTEND DEVELOPER </a></h2>
+                <p class="fifty-chars mb-3">We are seeking a talented and creative Frontend Developer to join our Technical team. As a React JS Developer, you will play a crucial role in designing, developing, and maintaining high-quality web applications that provide exceptional user experiences.
+                </p>
+                </div>
+                <div>
+                <div style=" display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                       <p style="color: #003f6b; font-weight: 700; " class="mt-2 mb-3">Location: <span style="font-weight: bold; text-decoration: underline;"><a href="https://maps.app.goo.gl/tekQfepa1KMrRoUo7" target="_blank" rel="noopener noreferrer" aria-describedby="a11y-new-window-message" >Ambattur</a></span>, Chennai</p>
+                  <div class="stylablebutton643855516__container" style="width: 200px;">
+                    <a href="frontend-ui-developer.html" target="_blank" rel="noopener noreferrer" aria-describedby="a11y-new-window-message">
+                      <button class="text-uppercase border-0 btn applyNowBtn">Apply Now</button>
+                    </a>
+                  </div></div>
+                  </div>
+              </div>
+           
+          </div>
+          <div class="col-lg-4 col-md-6 mt-4 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box iconbox-red careerContainer" style="display:flex;flex-direction:column;justify-content:space-between">
+            <div>
+              <h2 class="p p1"><a href="content-writer-digital-marketer.html" target="_blank" rel="noopener noreferrer" aria-describedby="a11y-new-window-message">CONTENT WRITER & DIGITAL MARKETER</a></h2>
+              <p class="fifty-chars mb-3">The ideal applicant must be aware of trendy writing styles and create content that connects with the targeted audience. The applicant shall be required to write, develop, edit, and publish content and copy for a variety of digital platforms, including website, blog, video, marketing email campaigns, advertising campaigns, social media posts, and more. Additionally, they will. The candidate will majorly.
+              </p>
+              </div>
+              <div>
+              <div style=" display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                     <p style="color: #003f6b; font-weight: 700; " class="mt-2 mb-3">Location: <span style="font-weight: bold; text-decoration: underline;"><a href="https://maps.app.goo.gl/tekQfepa1KMrRoUo7" target="_blank" rel="noopener noreferrer" aria-describedby="a11y-new-window-message" >Ambattur</a></span>, Chennai</p>
+                <div class="stylablebutton643855516__container" style="width: 200px;">
+                  <a href="content-writer-digital-marketer.html" target="_blank" rel="noopener noreferrer" aria-describedby="a11y-new-window-message">
+                    <button class="text-uppercase border-0 btn applyNowBtn">Apply Now</button>
+                  </a>
+                </div></div>
+                </div>
+            </div>
+         
+        </div>
+        <div class="col-lg-4 col-md-6 mt-4 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+          <div class="icon-box iconbox-red careerContainer" style="display:flex;flex-direction:column;justify-content:space-between">
+          <div>
+            <h2 class="p p1"><a href="accounts-executive.html" target="_blank" rel="noopener noreferrer" aria-describedby="a11y-new-window-message">ACCOUNTS EXECUTIVE</a></h2>
+            <p class="fifty-chars mb-3">The ideal candidate will be responsible for developing financial strategies for the organisation, and providing regular financial reporting. They will also play a major role as procurement manager by communicating with our partners for product procurement. By reporting directly to the Managing Director, based within our UK headquarters, they will play a major role in delivering the future growth that we fully expect to realise.
+            </p>
+            </div>
+            <div>
+            <div style=" display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                   <p style="color: #003f6b; font-weight: 700; " class="mt-2 mb-3">Location: <span style="font-weight: bold; text-decoration: underline;"><a href="https://maps.app.goo.gl/tekQfepa1KMrRoUo7" target="_blank" rel="noopener noreferrer" aria-describedby="a11y-new-window-message" >Ambattur</a></span>, Chennai</p>
+              <div class="stylablebutton643855516__container" style="width: 200px;">
+                <a href="accounts-executive.html" target="_blank" rel="noopener noreferrer" aria-describedby="a11y-new-window-message">
+                  <button class="text-uppercase border-0 btn applyNowBtn">Apply Now</button>
+                </a>
+              </div></div>
+              </div>
+          </div>
+       
+      </div>
+          </div>
+        </div>
+               </div>
+              <div style="background-color: #003f6b; overflow: hidden;">
+          <div class="container">
+         <div class="pt-4 pb-4 sab-dev">
+<div class="col-lg-6 text-center" data-aos="fade-right" >
+  <img src="https://maidemo.s3.eu-west-2.amazonaws.com/SAB+Logo+white+png+1.png" style=" object-fit: contain; width: 80%;"/>
+</div>
+   <div class="col-lg-6" data-aos="fade-left"  style="display: flex; flex-direction: column; justify-content: center">
+    <h2 class="subtitle fw-bold" style="color: white;">CORPORATE SOCIAL RESPONSIBILITY</h2>
+    <p class="fw-semibold olcss" style="color: white;">MAI initiates a holistic approach to community well-being by extending its “Family Counselling Services” to the general public, fostering mental health and support for families in need through its project SAB.</p>
+  </div>
+         </div>
+         <div class="pt-4 pb-5 sab-dev">
+          <div class="col-lg-6 " data-aos="fade-right">
+            <div class="m-2">
+            <img src="https://maidemo.s3.eu-west-2.amazonaws.com/Rectangle+246.png"  style="width: 100%; height: auto; flex: 1;"/>
+          </div></div>
+          <div class="col-lg-6"  data-aos="fade-left">
+            <div class="m-2">
+            <img src="https://maidemo.s3.eu-west-2.amazonaws.com/Rectangle+247.png"  style="width: 100%; height: auto; flex: 1;"/>
+          </div></div>
+        
+        </div>
+      </div>
+           </div>
+            <div class="container">
+          <h3 class="subtitle mt-3">Testimonials
+          </h3>
+           <div class="row d-flex justify-content-center h-100 services mb-4">
+          <div class="col-lg-4 col-md-6 testimonial_Box" style="align-self: stretch;" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box iconbox-red h-100" style="flex:1;">
+             <img class="testimonialImage" style="border-radius: 200px; border: 2px solid #DBE7F1; object-fit: fill;"
+                src="assets/img/testimonials/Manikandan.jpg" alt="Manikandan s Profile" />
+             <h2 class="text-uppercase fw-bold mt-2 mb-2" style="color: #003f6b;">Manikandan s</h2>
+             <p class="mt-1 fw-semibold p-3"><span style="color: #003f6b; font-size: 25px;">❝</span>Been working With GMS since Sep 2020, I have really seen the company grow. My career has skied with the growth of the company and I have had a chance to work with a very close team and founders. A conducive and employee-friendly work environment has helped me grow and develop my skills while making sure I deliver quality work to my clients as well. It has a good work-life balance too. I am glad that I made the decision to work here & I look forward to being a part of this organization for a long time to come.<span style="color: #003f6b; font-size: 25px;">❞</span></p>
+            </div>
+         </div>
+          <div class="col-lg-4 col-md-6 testimonial_Box" style="align-self: stretch;" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box iconbox-red h-100" style="flex:1;">
+             <img class="testimonialImage" style="border-radius: 200px; border: 2px solid #DBE7F1; object-fit: fill;"
+                src="assets/img/testimonials/Ashitha.jpg" alt="ASHRITHA Profile" />
+             <h2 class="text-uppercase fw-bold mt-2 mb-2" style="color: #003f6b;">ASHRITHA</h2>
+             <p class="mt-1 fw-semibold p-3"><span style="color: #003f6b; font-size: 25px;">❝</span>I've worked closely with GMS for 2 years, and it's been an incredible journey. Their vast working experience truly sets them apart in their field. MAI brings knowledge, skills, and a deep understanding of the industry to every project they tackle. MAI consistently promotes an environment where teamwork, creativity, and innovation thrive. It's clear that they understand the importance of collaboration and recognise that the best results often come from a diverse and inclusive team. As a Team Lead for Digital Marketing and Content Writing, I am proud to be a part of this beautiful organisation with excellent colleagues. I wholeheartedly recommend MAI to anyone looking for great work experience and a perfect work environment.<span style="color: #003f6b; font-size: 25px;">❞</span></p>
+            </div>
+         </div>
+        
+       <div class="col-lg-4 col-md-6 testimonial_Box" style="align-self: stretch;" data-aos="zoom-in" data-aos-delay="100">
+        <div class="icon-box iconbox-red h-100" style="flex:1;">
+         <img class="testimonialImage" style="border-radius: 200px; border: 2px solid #DBE7F1; object-fit: fill;"
+            src="assets/img/testimonials/Dimple.jpg" alt="DIMPLE Profile" />
+         <h2 class="text-uppercase fw-bold mt-2 mb-2" style="color: #003f6b;">DIMPLE</h2>
+         <p class="mt-1 fw-semibold p-3"><span style="color: #003f6b; font-size: 25px;">❝</span>Oh MAI, MAI , MAI!! It has been a wonderful journey so far. In the past 1.5 years with the team, I’ve observed that our director cum founder, G M S Sir always makes sure that we feel involved and seen. Every individual's efforts and opinions are valued. The organisation makes its best effort to maximise each person's potential and develop them into leaders, not just merely workers. I look forward to many more years of growth and success, personally as well as collectively.<span style="color: #003f6b; font-size: 25px;">❞</span></p>
+        </div>
+     </div>
+        </div>
+        <div class=" d-flex justify-content-center">
+        <p><a href="testimonials.html" ><span class="home-career-btn widt-new  " style=" display: flex; text-align: center; justify-content: center; align-items: center;">View All</span></a></p></div>
+
+        <h3 class="subtitle mt-3">Contact Us </h3>
+       <div data-aos="slide-up">
+        <div class="row d-flex justify-content-center services h-100" >
+          <div class="col-lg-6 mt-2">
+          <div class=" icon-box iconbox-red h-100 text-start" style="flex:1;">
+            <iframe style="border:0; width: 100%; height: 270px;" src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3885.698428605279!2d80.17077397507897!3d13.1182811872107!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTPCsDA3JzA1LjgiTiA4MMKwMTAnMjQuMSJF!5e0!3m2!1sen!2sin!4v1733133470718!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" frameborder="0" allowfullscreen></iframe> 
+            <!--  -->
+            <div class="address">
+              <!-- <i class="bi bi-geo-alt"></i>
+              <h4>Location:</h4> -->
+              <p class="mt-3">
+                <span class="fw-bold subtitlesb">Technical Office:</span></p><p>
+                  <span class="text-start"> MAI House, 238 & 239, Sai Baba Street, Sri Jayanthi Nagar, Pattaravakkam, Ambattur, Chennai, Tamil Nadu - 600053, India</span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 mt-2">
+          <div class=" icon-box iconbox-red h-100 text-start" style="flex:1;">
+            <iframe style="border:0; width: 100%; height: 270px;"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2444.306275439609!2d-0.07238922313437945!3d52.219653158422744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4877d9bdb04f00f5%3A0x8c177b154e5b774c!2s1%20De%20La%20Warr%20Way%2C%20Great%20Cambourne%2C%20Cambourne%2C%20Cambridge%20CB23%206DX%2C%20UK!5e0!3m2!1sen!2sin!4v1691131053233!5m2!1sen!2sin"
+              width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade" frameborder="0" allowfullscreen>
+            </iframe>
+            <p class="mt-3">
+              <span class="fw-bold subtitlesb">Registered Office:</span></p><p>
+              1, De La Warr Way, Great Cambourne, Cambridge CB23 6DX UK
+            </p>
+          </div>
+</div>
+
+        </div>
+        <div class="contact">
+        <div class="info">        
+          <div class="info-contact">
+
+           <div class="email">
+              <i class="bi bi-envelope"></i>
+              <h3>Email:</h3>
+              <p>info@maicorporation.co.in</p>
+           </div>
+
+           <div class="phone">
+              <i class="bi bi-phone"></i>
+              <h3>Call:</h3>
+              <p>+91 99622 21577
+              </p>
+           </div>
+          </div>
+        </div>
+        </div>
+       </div>
+
+             </div>
+          </div>
+        </div>
+    </section>
+    <!-- End About Us Section -->    
+
+</main>
+  <!--  -->
+
+   <!-- ======= Footer ======= -->
+   <footer id="footer">
+    <div class="footer-policy ">
+        <!-- <div class="copyright">
+            &copy; Copyrights <strong><span>MAI</span></strong>. All Rights Reserved
+        </div> -->
+        
+        <ul class="footer-policy-ul">
+            <li>Privacy policy</li>
+            
+            <li>Terms & conditions</li>
+            
+            <li>Contact us</li>
+            
+            <li><a href="CSRPolicy.html">CSR Policy</a></li>
+        </ul>
+      
+        <div class="social-media-icons ">
+          <span class="me-3">Get connected with </span>
+          <!-- Add your social media icons here -->
+          <a href="https://www.facebook.com/people/MAI-INDIA/61550667693968/" target="_blank"
+              rel="noopener noreferrer" aria-describedby="a11y-new-window-message"><i
+                  class="fa fa-facebook"></i></a>
+          <a href="https://twitter.com/MAI__INDIA" target="_blank" rel="noopener noreferrer"
+              aria-describedby="a11y-new-window-message"><i class="fa fa-twitter"></i></a>
+          <a href="https://www.linkedin.com/company/mai-india/" target="_blank" rel="noopener noreferrer"
+              aria-describedby="a11y-new-window-message"><i class="fa fa-linkedin"></i></a>
+          <a href="https://www.instagram.com/mai__india/" target="_blank" rel="noopener noreferrer" aria-describedby="a11y-new-window-message"><i
+                  class="fa fa-instagram"></i></a>
+          <a href="https://www.youtube.com/channel/UChqYQIAZhwIdG9mq3Ai8MVA" target="_blank"
+              rel="noopener noreferrer" aria-describedby="a11y-new-window-message"><i
+                  class="fa fa-youtube"></i></a>
+          <!-- Add more social media icons as needed -->
+      </div>
+       
+    </div>
+    <div class="copyright py-3">
+        &copy; Copyrights <strong><span>MAI</span></strong>. All Rights Reserved
+    </div> 
+
+    <div class="px-5">
+      <p  style="display: flex; flex-direction: column; align-items: center;justify-content: center;">MAI CORPORATION INDIA <span>REGISTERED AS CAINMAI SOFTWARE & EXPORT SERVICE PRIVATE LIMITED</span></p>
+      <p class="mb-0">CIN No: U62013TN2023PTC1628</p>
+      <p class="mb-3">MAI House, 238 & 239, Sai Baba Street, Sri Jayanthi Nagar, Pattaravakkam, Ambattur, Chennai - 600053</p>
+    </div>
+</footer><!-- End  Footer -->
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+      <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    
+
+  <!-- Vendor JS Files -->
+  <script src="script.js"></script>
+   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+  <!-- Three.js & MAI 3D Cinematic Scroll Experience -->
+  <script src="assets/vendor/three/three.min.js"></script>
+  <script src="assets/js/mai-3d-experience.js"></script>
+
+  <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N9F29DTD"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+</body>
+
+</html>

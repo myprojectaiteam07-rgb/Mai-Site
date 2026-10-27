@@ -1,0 +1,365 @@
+/* ========================================================
+   MAI Corporation - Cinematic 3D Scroll Experience Styles
+   ======================================================== */
+
+#mai-3d-scroll-track {
+  position: relative;
+  width: 100%;
+  height: 600vh; /* 6 stages of scroll narrative */
+  background-color: #060911;
+  z-index: 1010;
+}
+
+#mai-3d-sticky {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #060911;
+}
+
+#mai-3d-viewport {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#mai-3d-viewport canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+#mai-portal-transition {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at center, rgba(255, 255, 255, 0.98) 0%, rgba(0, 63, 107, 0.95) 80%);
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  z-index: 15;
+}
+
+/* --- HUD Header --- */
+.mai-3d-header {
+  position: absolute;
+  top: 24px;
+  left: 32px;
+  right: 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 20;
+  pointer-events: none;
+}
+
+.mai-3d-brand {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background: rgba(6, 15, 28, 0.65);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  padding: 8px 18px;
+  border-radius: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  pointer-events: auto;
+}
+
+.mai-3d-brand img {
+  height: 26px;
+  width: auto;
+}
+
+.mai-3d-brand span {
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.mai-skip-btn {
+  pointer-events: auto;
+  background: rgba(0, 63, 107, 0.8);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  color: #ffffff;
+  border: 1px solid rgba(255, 209, 92, 0.5);
+  padding: 10px 22px;
+  border-radius: 30px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.mai-skip-btn:hover {
+  background: #003f6b;
+  border-color: #ffd15c;
+  color: #ffd15c;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 63, 107, 0.5);
+}
+
+/* --- HUD Narrative Badge (Bottom Center) --- */
+.mai-3d-narrative {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(6, 15, 28, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  padding: 18px 36px;
+  border-radius: 20px;
+  text-align: center;
+  z-index: 20;
+  pointer-events: none;
+  min-width: 380px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+}
+
+.mai-stage-eyebrow {
+  display: inline-block;
+  color: #ffd15c;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+
+.mai-stage-title {
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  margin: 0 0 6px 0;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.mai-stage-desc {
+  color: rgba(255, 255, 255, 0.8);
+  font-family: 'Open Sans', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  margin: 0;
+}
+
+/* --- HUD Progress Bar (Bottom Edge) --- */
+.mai-hud-progress-track {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: rgba(255, 255, 255, 0.15);
+  z-index: 25;
+}
+
+.mai-hud-progress-fill {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, #005a9c 0%, #00b4d8 50%, #ffd15c 100%);
+  transition: width 0.08s linear;
+  box-shadow: 0 0 12px rgba(255, 209, 92, 0.8);
+}
+
+/* --- Right Side Stage Navigator Dots --- */
+.mai-stage-dots {
+  position: absolute;
+  right: 28px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  z-index: 20;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.mai-step-dot {
+  position: relative;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.25);
+  border: 2px solid rgba(255, 255, 255, 0.6);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.mai-step-dot:hover,
+.mai-step-dot.active {
+  background: #ffd15c;
+  border-color: #ffffff;
+  transform: scale(1.35);
+  box-shadow: 0 0 12px rgba(255, 209, 92, 0.9);
+}
+
+.mai-step-dot .tooltip-text {
+  visibility: hidden;
+  position: absolute;
+  right: 24px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(6, 15, 28, 0.85);
+  backdrop-filter: blur(8px);
+  color: #ffffff;
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  pointer-events: none;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.mai-step-dot:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(-50%) translateX(-4px);
+}
+
+/* --- Initial Scroll Hint (Bottom Center) --- */
+.mai-scroll-prompt {
+  position: absolute;
+  bottom: 155px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  z-index: 20;
+  color: rgba(255, 255, 255, 0.7);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  pointer-events: none;
+  animation: promptPulse 2.5s infinite;
+  transition: opacity 0.3s ease;
+}
+
+.mai-scroll-mouse {
+  width: 22px;
+  height: 34px;
+  border: 2px solid rgba(255, 255, 255, 0.6);
+  border-radius: 12px;
+  position: relative;
+}
+
+.mai-scroll-mouse::after {
+  content: '';
+  position: absolute;
+  top: 6px;
+  left: 50%;
+  width: 3px;
+  height: 6px;
+  background: #ffd15c;
+  border-radius: 2px;
+  transform: translateX(-50%);
+  animation: wheelDrop 1.8s infinite;
+}
+
+@keyframes wheelDrop {
+  0% { opacity: 0; transform: translate(-50%, 0); }
+  30% { opacity: 1; }
+  100% { opacity: 0; transform: translate(-50%, 12px); }
+}
+
+@keyframes promptPulse {
+  0%, 100% { opacity: 0.5; }
+  50% { opacity: 0.95; }
+}
+
+/* --- Floating "Replay 3D Intro" Button --- */
+#mai-replay-btn {
+  position: fixed;
+  bottom: 28px;
+  left: 28px;
+  z-index: 1040;
+  background: linear-gradient(135deg, #003f6b 0%, #002244 100%);
+  color: #ffffff;
+  border: 1px solid rgba(255, 209, 92, 0.6);
+  padding: 10px 18px;
+  border-radius: 30px;
+  box-shadow: 0 8px 24px rgba(0, 34, 68, 0.4);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  opacity: 0;
+  transform: translateY(20px);
+  pointer-events: none;
+}
+
+#mai-replay-btn.visible {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+#mai-replay-btn:hover {
+  background: #003f6b;
+  border-color: #ffd15c;
+  color: #ffd15c;
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 12px 28px rgba(0, 63, 107, 0.6);
+}
+
+#mai-replay-btn i {
+  color: #ffd15c;
+  font-size: 14px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .mai-3d-narrative {
+    min-width: 90%;
+    padding: 12px 18px;
+    bottom: 24px;
+  }
+  .mai-stage-title {
+    font-size: 18px;
+  }
+  .mai-stage-desc {
+    font-size: 11px;
+  }
+  .mai-stage-dots {
+    display: none;
+  }
+  .mai-3d-header {
+    top: 14px;
+    left: 16px;
+    right: 16px;
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "name": "mai-corporation",
+  "version": "1.0.0",
+  "description": "MAI Corporation official website with 3D cinematic scroll experience",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [
+    "mai",
+    "threejs",
+    "construction",
+    "3d"
+  ],
+  "author": "MAI Corporation",
+  "license": "ISC"
+}
