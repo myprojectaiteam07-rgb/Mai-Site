@@ -1,6 +1,7 @@
 @echo off
 echo ========================================================
-echo   Push MAI Corporation Website to Your GitHub Account
+echo   Pushing MAI Corporation Website to GitHub
+echo   Repository: https://github.com/myprojectaiteam07-rgb/Mai-Site.git
 echo ========================================================
 echo.
 cd /d "%~dp0"
@@ -13,31 +14,22 @@ if errorlevel 1 (
     )
 )
 
-set /p REPO_URL="Enter your GitHub Repository URL (e.g. https://github.com/username/mai-corporation.git): "
-
-if "%REPO_URL%"=="" (
-    echo Error: No URL entered. Exiting.
-    pause
-    exit /b 1
-)
-
-echo.
-echo Removing existing remote origin (if any)...
+echo Configuring remote...
 "%GIT_CMD%" remote remove origin 2>nul
-
-echo Adding remote origin: %REPO_URL%
-"%GIT_CMD%" remote add origin %REPO_URL%
-
-echo.
-echo Setting main branch...
+"%GIT_CMD%" remote add origin https://github.com/myprojectaiteam07-rgb/Mai-Site.git
 "%GIT_CMD%" branch -M main
 
 echo.
-echo Pushing to GitHub...
+echo Pushing to GitHub (Sign in with your GitHub account if prompted)...
 "%GIT_CMD%" push -u origin main
 
 echo.
 echo ========================================================
-echo   Push completed successfully!
+if errorlevel 1 (
+    echo   Push encountered an error. If prompted, please verify
+    echo   your GitHub permissions / Personal Access Token.
+) else (
+    echo   Pushed successfully to https://github.com/myprojectaiteam07-rgb/Mai-Site.git!
+)
 echo ========================================================
 pause
